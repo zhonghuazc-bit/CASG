@@ -1,0 +1,77 @@
+{
+  "scope": "B1 35人×16题, Human=v2(补分后), question_weights 重归一化(和=1.0), α*_B2=0.8246 transferred / α*_B1 recalibrated",
+  "n": 35,
+  "max_score": 100.0,
+  "orig_weight_sum_16q": 0.964708,
+  "alpha_star_b2": 0.824642,
+  "alpha_star_b1": 0.5846,
+  "delta_alpha": 0.24,
+  "human_v2": {
+    "P": 0.186,
+    "D": 0.157,
+    "sigma": 6.64,
+    "mean": 81.42
+  },
+  "transferred": {
+    "P": 0.236,
+    "D": 0.191,
+    "sigma": 8.33,
+    "mean": 76.36,
+    "r": 0.659,
+    "qwk10": 0.469,
+    "mae": 5.9
+  },
+  "recalibrated": {
+    "alpha": 0.5846,
+    "loss": 0.602345,
+    "P": 0.2,
+    "D": 0.175,
+    "sigma": 7.8,
+    "mean": 80.0,
+    "r": 0.674,
+    "qwk10": 0.554,
+    "mae": 4.63
+  },
+  "sampling": {
+    "5": {
+      "sample_size": 5,
+      "alpha_mean": 0.5445,
+      "alpha_std": 0.1907,
+      "alpha_min": 0.1485,
+      "alpha_max": 0.9681,
+      "r_mean": 0.6744,
+      "sigma_mean": 7.7084,
+      "P_mean": 0.1912
+    },
+    "10": {
+      "sample_size": 10,
+      "alpha_mean": 0.6161,
+      "alpha_std": 0.1494,
+      "alpha_min": 0.3286,
+      "alpha_max": 0.905,
+      "r_mean": 0.6715,
+      "sigma_mean": 7.8678,
+      "P_mean": 0.2039
+    },
+    "15": {
+      "sample_size": 15,
+      "alpha_mean": 0.568,
+      "alpha_std": 0.1064,
+      "alpha_min": 0.3723,
+      "alpha_max": 0.8505,
+      "r_mean": 0.6747,
+      "sigma_mean": 7.7624,
+      "P_mean": 0.1966
+    },
+    "20": {
+      "sample_size": 20,
+      "alpha_mean": 0.6008,
+      "alpha_std": 0.0903,
+      "alpha_min": 0.4656,
+      "alpha_max": 0.799,
+      "r_mean": 0.6729,
+      "sigma_mean": 7.8368,
+      "P_mean": 0.2022
+    }
+  }
+}

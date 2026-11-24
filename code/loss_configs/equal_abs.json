@@ -1,0 +1,9 @@
+{
+  "name": "equal_abs",
+  "label": "equal_abs: |P-0.20|+|D-0.30|+|σ-10| (绝对偏差, 三权重=1)",
+  "terms": [
+    {"metric": "P", "weight": 1.0, "target": 0.20},
+    {"metric": "D", "weight": 1.0, "target": 0.30},
+    {"metric": "sigma", "weight": 1.0, "target": 10.0}
+  ]
+}

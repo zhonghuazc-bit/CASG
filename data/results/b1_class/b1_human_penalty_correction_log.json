@@ -1,0 +1,1398 @@
+{
+ "description": "补分审计: 每条记录=受惩罚且人工<CASG 的题目, 人工补分为CASG分",
+ "alpha_star": 0.6169,
+ "n_students": 33,
+ "n_questions": 139,
+ "details": [
+  {
+   "sid": "S004",
+   "qid": "HW3_Q1",
+   "old": 65.0,
+   "casg": 89.05,
+   "corrected": 89.05,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S005",
+   "qid": "HW1_Q3",
+   "old": 80.0,
+   "casg": 86.79,
+   "corrected": 86.79,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S005",
+   "qid": "HW3_Q1",
+   "old": 80.0,
+   "casg": 86.04,
+   "corrected": 86.04,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S005",
+   "qid": "HW3_Q3",
+   "old": 83.33,
+   "casg": 92.7,
+   "corrected": 92.7,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S005",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S005",
+   "qid": "HW4_Q4",
+   "old": 33.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "公示不正确的，答案不正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S005",
+   "qid": "HW4_Q5",
+   "old": 50.0,
+   "casg": 50.34,
+   "corrected": 50.34,
+   "penalty": "bujiao",
+   "comment": "最后一题未作答",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S006",
+   "qid": "HW2_Q2",
+   "old": 60.0,
+   "casg": 78.39,
+   "corrected": 78.39,
+   "penalty": "+longans",
+   "comment": "排版乱，随机游走作用不完全",
+   "status": "完成"
+  },
+  {
+   "sid": "S007",
+   "qid": "HW1_Q1",
+   "old": 80.0,
+   "casg": 92.41,
+   "corrected": 92.41,
+   "penalty": "+longans",
+   "comment": "回答基本正确，排版混乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S007",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S007",
+   "qid": "HW4_Q5",
+   "old": 83.33,
+   "casg": 91.61,
+   "corrected": 91.61,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S007",
+   "qid": "HW5_Q1",
+   "old": 84.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答基本正确，较为啰嗦",
+   "status": "完成"
+  },
+  {
+   "sid": "S007",
+   "qid": "HW5_Q2",
+   "old": 88.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "+longans",
+   "comment": "回答基本正确，啰嗦长篇大论",
+   "status": "完成"
+  },
+  {
+   "sid": "S009",
+   "qid": "HW2_Q1",
+   "old": 60.0,
+   "casg": 73.91,
+   "corrected": 73.91,
+   "penalty": "bujiao",
+   "comment": "本体建模和映射定义不是odba的一部分，在构建知识图谱时就已经完成了。",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S009",
+   "qid": "HW2_Q2",
+   "old": 70.0,
+   "casg": 81.96,
+   "corrected": 81.96,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S010",
+   "qid": "HW5_Q2",
+   "old": 80.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "bujiao",
+   "comment": "",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S010",
+   "qid": "HW5_Q3",
+   "old": 70.0,
+   "casg": 82.6,
+   "corrected": 82.6,
+   "penalty": "bujiao",
+   "comment": "",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S011",
+   "qid": "HW3_Q1",
+   "old": 70.0,
+   "casg": 75.54,
+   "corrected": 75.54,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S011",
+   "qid": "HW3_Q3",
+   "old": 60.0,
+   "casg": 68.09,
+   "corrected": 68.09,
+   "penalty": "bujiao",
+   "comment": "缺少计算过程",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S012",
+   "qid": "HW3_Q1",
+   "old": 70.0,
+   "casg": 83.69,
+   "corrected": 83.69,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S012",
+   "qid": "HW3_Q3",
+   "old": 73.33,
+   "casg": 78.51,
+   "corrected": 78.51,
+   "penalty": "bujiao",
+   "comment": "缺少增益计算，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S012",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "较为啰嗦，但对crf讲解的原理不精准",
+   "status": "完成"
+  },
+  {
+   "sid": "S014",
+   "qid": "HW1_Q1",
+   "old": 60.0,
+   "casg": 69.38,
+   "corrected": 69.38,
+   "penalty": "bujiao",
+   "comment": "缺陷讲的不确定，neo4j解释的不到位",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S014",
+   "qid": "HW1_Q2",
+   "old": 80.0,
+   "casg": 93.24,
+   "corrected": 93.24,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S014",
+   "qid": "HW1_Q3",
+   "old": 60.0,
+   "casg": 69.25,
+   "corrected": 69.25,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S015",
+   "qid": "HW3_Q3",
+   "old": 70.0,
+   "casg": 74.07,
+   "corrected": 74.07,
+   "penalty": "+longans",
+   "comment": "计算过程缺失，格式混乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S015",
+   "qid": "HW4_Q2",
+   "old": 66.67,
+   "casg": 90.51,
+   "corrected": 90.51,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S015",
+   "qid": "HW4_Q4",
+   "old": 50.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "公示混乱，过程不清晰，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S015",
+   "qid": "HW4_Q5",
+   "old": 75.0,
+   "casg": 94.58,
+   "corrected": 94.58,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S015",
+   "qid": "HW5_Q1",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "方案选择证券，但过于啰嗦，核心优缺点描述不明确",
+   "status": "完成"
+  },
+  {
+   "sid": "S015",
+   "qid": "HW5_Q2",
+   "old": 88.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "+longans",
+   "comment": "回答基本正确，内容啰嗦，重点不突出",
+   "status": "完成"
+  },
+  {
+   "sid": "S016",
+   "qid": "HW3_Q1",
+   "old": 70.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S016",
+   "qid": "HW3_Q3",
+   "old": 26.67,
+   "casg": 39.7,
+   "corrected": 39.7,
+   "penalty": "bujiao",
+   "comment": "没有计算过程，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S019",
+   "qid": "HW4_Q5",
+   "old": 91.67,
+   "casg": 92.7,
+   "corrected": 92.7,
+   "penalty": "+longans",
+   "comment": "排版较乱回答基本正确",
+   "status": "完成"
+  },
+  {
+   "sid": "S019",
+   "qid": "HW5_Q3",
+   "old": 60.0,
+   "casg": 80.19,
+   "corrected": 80.19,
+   "penalty": "+longans",
+   "comment": "实例rdf不全，tbox缺少protege格式截图或文件",
+   "status": "完成"
+  },
+  {
+   "sid": "S021",
+   "qid": "HW2_Q3",
+   "old": 70.0,
+   "casg": 91.87,
+   "corrected": 91.87,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S021",
+   "qid": "HW5_Q1",
+   "old": 88.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答正确，但比较啰嗦，回答部分内容超出题目范围",
+   "status": "完成"
+  },
+  {
+   "sid": "S022",
+   "qid": "HW2_Q1",
+   "old": 60.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S022",
+   "qid": "HW2_Q3",
+   "old": 80.0,
+   "casg": 81.94,
+   "corrected": 81.94,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S024",
+   "qid": "HW2_Q1",
+   "old": 70.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S024",
+   "qid": "HW2_Q3",
+   "old": 80.0,
+   "casg": 94.57,
+   "corrected": 94.57,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S024",
+   "qid": "HW4_Q2",
+   "old": 75.0,
+   "casg": 79.7,
+   "corrected": 79.7,
+   "penalty": "+longans",
+   "comment": "答案格式不正确，缺失内容，回答基本正确",
+   "status": "完成"
+  },
+  {
+   "sid": "S026",
+   "qid": "HW1_Q1",
+   "old": 73.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答太啰嗦，重点不突出，回答基本正确",
+   "status": "完成"
+  },
+  {
+   "sid": "S026",
+   "qid": "HW2_Q2",
+   "old": 90.0,
+   "casg": 95.26,
+   "corrected": 95.26,
+   "penalty": "+longans",
+   "comment": "回答正确，但太啰嗦了",
+   "status": "完成"
+  },
+  {
+   "sid": "S026",
+   "qid": "HW4_Q2",
+   "old": 91.67,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答正确，但较啰嗦",
+   "status": "完成"
+  },
+  {
+   "sid": "S026",
+   "qid": "HW5_Q2",
+   "old": 92.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "+longans",
+   "comment": "回答正确，但较啰嗦",
+   "status": "完成"
+  },
+  {
+   "sid": "S026",
+   "qid": "HW5_Q3",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "少了protege格式的图片或者ttl文件",
+   "status": "完成"
+  },
+  {
+   "sid": "S027",
+   "qid": "HW4_Q2",
+   "old": 91.67,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答正确但排版较乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S029",
+   "qid": "HW1_Q2",
+   "old": 80.0,
+   "casg": 88.94,
+   "corrected": 88.94,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S029",
+   "qid": "HW1_Q3",
+   "old": 60.0,
+   "casg": 90.72,
+   "corrected": 90.72,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S030",
+   "qid": "HW2_Q1",
+   "old": 80.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S030",
+   "qid": "HW2_Q2",
+   "old": 60.0,
+   "casg": 66.89,
+   "corrected": 66.89,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S030",
+   "qid": "HW4_Q2",
+   "old": 75.0,
+   "casg": 87.09,
+   "corrected": 87.09,
+   "penalty": "+longans",
+   "comment": "回答基本正确，排版混乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW2_Q1",
+   "old": 60.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "本体与规则定义都是建立知识图谱时就完成了",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW2_Q2",
+   "old": 70.0,
+   "casg": 78.64,
+   "corrected": 78.64,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW3_Q1",
+   "old": 75.0,
+   "casg": 92.89,
+   "corrected": 92.89,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW3_Q3",
+   "old": 63.33,
+   "casg": 72.38,
+   "corrected": 72.38,
+   "penalty": "bujiao",
+   "comment": "大白话是什么意思？计算过程缺失，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 90.51,
+   "corrected": 90.51,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW4_Q4",
+   "old": 58.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "答案显示混乱，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S031",
+   "qid": "HW4_Q5",
+   "old": 58.33,
+   "casg": 92.7,
+   "corrected": 92.7,
+   "penalty": "bujiao",
+   "comment": "奖励函数没有量化，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S032",
+   "qid": "HW2_Q1",
+   "old": 70.0,
+   "casg": 82.33,
+   "corrected": 82.33,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S032",
+   "qid": "HW5_Q1",
+   "old": 80.0,
+   "casg": 81.0,
+   "corrected": 81.0,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S035",
+   "qid": "HW3_Q1",
+   "old": 60.0,
+   "casg": 88.87,
+   "corrected": 88.87,
+   "penalty": "bujiao",
+   "comment": "，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S035",
+   "qid": "HW3_Q2",
+   "old": 70.0,
+   "casg": 72.97,
+   "corrected": 72.97,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S035",
+   "qid": "HW4_Q1",
+   "old": 58.33,
+   "casg": 58.59,
+   "corrected": 58.59,
+   "penalty": "bujiao",
+   "comment": "方案B需要大量数据标注未提及，，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S035",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 87.09,
+   "corrected": 87.09,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S035",
+   "qid": "HW4_Q5",
+   "old": 58.33,
+   "casg": 90.99,
+   "corrected": 90.99,
+   "penalty": "bujiao",
+   "comment": "策略选择器不具体，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S035",
+   "qid": "HW5_Q3",
+   "old": 30.0,
+   "casg": 45.86,
+   "corrected": 45.86,
+   "penalty": "+longans",
+   "comment": "乱码，只看到实体，其他未见",
+   "status": "完成"
+  },
+  {
+   "sid": "S036",
+   "qid": "HW2_Q1",
+   "old": 70.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S036",
+   "qid": "HW2_Q2",
+   "old": 70.0,
+   "casg": 88.57,
+   "corrected": 88.57,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S036",
+   "qid": "HW3_Q1",
+   "old": 75.0,
+   "casg": 89.05,
+   "corrected": 89.05,
+   "penalty": "+longans",
+   "comment": "回答基本正确，排版混乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S036",
+   "qid": "HW5_Q1",
+   "old": 88.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "回答正确，过于啰嗦，行文不流畅",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S036",
+   "qid": "HW5_Q2",
+   "old": 92.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S036",
+   "qid": "HW5_Q3",
+   "old": 50.0,
+   "casg": 82.6,
+   "corrected": 82.6,
+   "penalty": "bujiao",
+   "comment": "缺少tbox",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW1_Q1",
+   "old": 80.0,
+   "casg": 96.31,
+   "corrected": 96.31,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW1_Q2",
+   "old": 60.0,
+   "casg": 93.57,
+   "corrected": 93.57,
+   "penalty": "bujiao+longans",
+   "comment": "格式混乱，回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW2_Q2",
+   "old": 70.0,
+   "casg": 81.75,
+   "corrected": 81.75,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW3_Q1",
+   "old": 50.0,
+   "casg": 86.48,
+   "corrected": 86.48,
+   "penalty": "bujiao+longans",
+   "comment": "回答排版混乱，包含无关内容，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW3_Q3",
+   "old": 73.33,
+   "casg": 83.33,
+   "corrected": 83.33,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，缺少增益计算，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW4_Q1",
+   "old": 58.33,
+   "casg": 65.75,
+   "corrected": 65.75,
+   "penalty": "bujiao+longans",
+   "comment": "排版混乱，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW4_Q2",
+   "old": 58.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "回答基本正确，排版混乱，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW4_Q3",
+   "old": 58.33,
+   "casg": 80.92,
+   "corrected": 80.92,
+   "penalty": "bujiao+longans",
+   "comment": "排版混乱回答基本正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW4_Q4",
+   "old": 33.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "公式混乱，格式乱，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW4_Q5",
+   "old": 58.33,
+   "casg": 90.99,
+   "corrected": 90.99,
+   "penalty": "bujiao+longans",
+   "comment": "排版混乱，奖励函数量化缺失，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW5_Q1",
+   "old": 92.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "回答正确，但行文不流畅",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW5_Q2",
+   "old": 84.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S037",
+   "qid": "HW5_Q3",
+   "old": 70.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "格式混乱。缺少protege界面或文件，",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW1_Q1",
+   "old": 80.0,
+   "casg": 87.39,
+   "corrected": 87.39,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW1_Q3",
+   "old": 60.0,
+   "casg": 79.12,
+   "corrected": 79.12,
+   "penalty": "bujiao",
+   "comment": "子图匹配才是本质",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW2_Q1",
+   "old": 70.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "建模与映射不是obda的过程",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW2_Q2",
+   "old": 60.0,
+   "casg": 81.77,
+   "corrected": 81.77,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW2_Q3",
+   "old": 60.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "回答基本正确,算子不正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW3_Q3",
+   "old": 76.67,
+   "casg": 85.15,
+   "corrected": 85.15,
+   "penalty": "bujiao",
+   "comment": "不需要标注精简版，精简大白话，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S038",
+   "qid": "HW5_Q3",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "缺少protege形式截图或格式文件",
+   "status": "完成"
+  },
+  {
+   "sid": "S039",
+   "qid": "HW3_Q1",
+   "old": 70.0,
+   "casg": 85.35,
+   "corrected": 85.35,
+   "penalty": "bujiao",
+   "comment": "，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S039",
+   "qid": "HW4_Q1",
+   "old": 33.33,
+   "casg": 43.07,
+   "corrected": 43.07,
+   "penalty": "bujiao",
+   "comment": "未明确方案选择，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S039",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 87.1,
+   "corrected": 87.1,
+   "penalty": "bujiao",
+   "comment": "回答正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S039",
+   "qid": "HW4_Q5",
+   "old": 50.0,
+   "casg": 74.06,
+   "corrected": 74.06,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW2_Q1",
+   "old": 80.0,
+   "casg": 82.33,
+   "corrected": 82.33,
+   "penalty": "bujiao",
+   "comment": "OBDA，回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW2_Q2",
+   "old": 70.0,
+   "casg": 77.32,
+   "corrected": 77.32,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW2_Q3",
+   "old": 80.0,
+   "casg": 91.87,
+   "corrected": 91.87,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW3_Q1",
+   "old": 65.0,
+   "casg": 82.6,
+   "corrected": 82.6,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，但论述不够深入，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW4_Q2",
+   "old": 83.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "，补交扣分回答正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW4_Q5",
+   "old": 50.0,
+   "casg": 81.88,
+   "corrected": 81.88,
+   "penalty": "bujiao",
+   "comment": "强化学习没有讲清楚策略，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW5_Q1",
+   "old": 92.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "回答基本正确，但部分内容超出题目范围",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW5_Q2",
+   "old": 76.0,
+   "casg": 95.62,
+   "corrected": 95.62,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S040",
+   "qid": "HW5_Q3",
+   "old": 50.0,
+   "casg": 52.5,
+   "corrected": 52.5,
+   "penalty": "bujiao",
+   "comment": "缺少实例，",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW1_Q1",
+   "old": 80.0,
+   "casg": 94.93,
+   "corrected": 94.93,
+   "penalty": "bujiao+longans",
+   "comment": "回答正确，但过于复杂",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW1_Q3",
+   "old": 66.67,
+   "casg": 83.43,
+   "corrected": 83.43,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW2_Q1",
+   "old": 60.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "本体建模和映射定义不是odba的一部分，在构建知识图谱时就已经完成了。",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW2_Q2",
+   "old": 70.0,
+   "casg": 79.12,
+   "corrected": 79.12,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW3_Q1",
+   "old": 65.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "联合抽取分析不够具体，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW3_Q3",
+   "old": 73.33,
+   "casg": 77.83,
+   "corrected": 77.83,
+   "penalty": "bujiao",
+   "comment": "增益计算有误，补交扣分2",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW4_Q2",
+   "old": 58.33,
+   "casg": 71.1,
+   "corrected": 71.1,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW4_Q3",
+   "old": 58.33,
+   "casg": 67.1,
+   "corrected": 67.1,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S041",
+   "qid": "HW4_Q5",
+   "old": 66.67,
+   "casg": 94.58,
+   "corrected": 94.58,
+   "penalty": "bujiao",
+   "comment": "回答基本正确，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S042",
+   "qid": "HW1_Q1",
+   "old": 66.67,
+   "casg": 88.33,
+   "corrected": 88.33,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S042",
+   "qid": "HW1_Q2",
+   "old": 70.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S042",
+   "qid": "HW1_Q3",
+   "old": 80.0,
+   "casg": 85.3,
+   "corrected": 85.3,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S042",
+   "qid": "HW2_Q1",
+   "old": 50.0,
+   "casg": 79.11,
+   "corrected": 79.11,
+   "penalty": "bujiao",
+   "comment": "",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S043",
+   "qid": "HW5_Q2",
+   "old": 88.0,
+   "casg": 93.04,
+   "corrected": 93.04,
+   "penalty": "+longans",
+   "comment": "回答基本正确，表达不流畅",
+   "status": "完成"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW1_Q1",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "基本正确，但太啰嗦，重点不突出",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW1_Q2",
+   "old": 80.0,
+   "casg": 93.32,
+   "corrected": 93.32,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW2_Q1",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "本体建模和映射定义不是odba的一部分，在构建知识图谱时就已经完成了。",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW2_Q2",
+   "old": 60.0,
+   "casg": 92.28,
+   "corrected": 92.28,
+   "penalty": "bujiao+longans",
+   "comment": "回答基本正确，过于啰嗦",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW3_Q1",
+   "old": 75.0,
+   "casg": 82.6,
+   "corrected": 82.6,
+   "penalty": "bujiao",
+   "comment": "联合抽取分析不够深入准确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW4_Q1",
+   "old": 75.0,
+   "casg": 94.53,
+   "corrected": 94.53,
+   "penalty": "bujiao+longans",
+   "comment": "回答正确，但是较为啰嗦，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW4_Q2",
+   "old": 66.67,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "回答正确，但较为啰嗦，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW4_Q5",
+   "old": 33.33,
+   "casg": 69.44,
+   "corrected": 69.44,
+   "penalty": "bujiao",
+   "comment": "标签打的不对，噪声回答不完全，强化学习策略不具体，补交扣分",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW5_Q1",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "回答基本正确，过于啰嗦，超出需要回答的范围",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW5_Q2",
+   "old": 76.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao+longans",
+   "comment": "大篇幅，啰嗦，无重点，没有支出transe分布式向量表示的基础是图谱。",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S045",
+   "qid": "HW5_Q3",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "缺少protege截图或文件",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S046",
+   "qid": "HW1_Q2",
+   "old": 70.0,
+   "casg": 82.3,
+   "corrected": 82.3,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S047",
+   "qid": "HW1_Q2",
+   "old": 80.0,
+   "casg": 96.78,
+   "corrected": 96.78,
+   "penalty": "+longans",
+   "comment": "排版较乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S047",
+   "qid": "HW2_Q1",
+   "old": 60.0,
+   "casg": 87.8,
+   "corrected": 87.8,
+   "penalty": "bujiao",
+   "comment": "本体建模和映射定义不是odba的一部分，在构建知识图谱时就已经完成了。",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S047",
+   "qid": "HW2_Q2",
+   "old": 80.0,
+   "casg": 83.78,
+   "corrected": 83.78,
+   "penalty": "bujiao",
+   "comment": "回答基本正确",
+   "status": "完成（补交）"
+  },
+  {
+   "sid": "S047",
+   "qid": "HW3_Q3",
+   "old": 93.33,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答正确，排版混乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S047",
+   "qid": "HW4_Q2",
+   "old": 91.67,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "+longans",
+   "comment": "回答正确，但排版较乱",
+   "status": "完成"
+  },
+  {
+   "sid": "S047",
+   "qid": "HW5_Q3",
+   "old": 80.0,
+   "casg": 100.0,
+   "corrected": 100.0,
+   "penalty": "bujiao",
+   "comment": "缺少protege截图或文件",
+   "status": "完成（补交）"
+  }
+ ]
+}

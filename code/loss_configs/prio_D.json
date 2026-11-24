@@ -1,0 +1,9 @@
+{
+  "name": "prio_D",
+  "label": "prio_D: |P-0.20|/0.20 + 10|D-0.30|/0.30 + |σ-10|/10 (D 优先, 权重10)",
+  "terms": [
+    {"metric": "P", "weight": 1.0, "target": 0.20, "deviation": "relative"},
+    {"metric": "D", "weight": 10.0, "target": 0.30, "deviation": "relative"},
+    {"metric": "sigma", "weight": 1.0, "target": 10.0, "deviation": "relative"}
+  ]
+}

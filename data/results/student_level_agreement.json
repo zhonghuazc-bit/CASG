@@ -1,0 +1,28 @@
+{
+  "n_students": 38,
+  "total_score": {
+    "raw_llm_vs_human": {
+      "pearson_r": 0.5871,
+      "spearman_rho": 0.2615,
+      "mae": 467.7,
+      "llm_mean": 788.8,
+      "human_mean": 1256.5,
+      "bias": -467.7
+    },
+    "calibrated_vs_human": {
+      "pearson_r": 0.4819,
+      "spearman_rho": 0.2615,
+      "cal_mean": 1113.3,
+      "human_mean": 1256.5
+    }
+  },
+  "mean_score_0_100": {
+    "pearson_r": 0.2108,
+    "spearman_rho": 0.1928,
+    "qwk": 0.0336,
+    "mae": 29.8,
+    "human_mean": 80.8,
+    "llm_mean": 50.9,
+    "bias": -29.8
+  }
+}

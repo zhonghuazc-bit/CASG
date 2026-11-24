@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CASG 完整实验结果可视化</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f0 100%);
+    padding: 24px;
+    min-height: 100vh;
+    color: #1a1a2e;
+  }
+  .container { max-width: 1300px; margin: 0 auto; }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 32px;
+  }
+  .section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  /* 指标卡片 */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .metric-card {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 16px 12px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+  }
+  .metric-label {
+    font-size: 12px;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .metric-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 4px 0;
+  }
+  .metric-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-human { background: #3b82f6; }
+  .dot-llm { background: #f59e0b; }
+  .dot-casg { background: #10b981; }
+  .metric-value {
+    font-size: 14px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  /* 分布统计表 */
+  .dist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+  }
+  .dist-table th {
+    background: #f1f5f9;
+    padding: 10px 14px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  .dist-table td {
+    padding: 10px 14px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid #f1f5f9;
+    font-variant-numeric: tabular-nums;
+  }
+  .dist-table tr:hover { background: #f8fafc; }
+  .label-human { color: #3b82f6; font-weight: 600; }
+  .label-llm { color: #f59e0b; font-weight: 600; }
+  .label-casg { color: #10b981; font-weight: 600; }
+  
+  /* 图表容器 */
+  .chart-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+  }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .chart-col { height: 380px; position: relative; }
+  
+  /* 逐题表格 */
+  .q-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .q-table th {
+    background: #f1f5f9;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 2px solid #cbd5e1;
+    white-space: nowrap;
+  }
+  .q-table td {
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f1f5f9;
+    font-variant-numeric: tabular-nums;
+  }
+  .q-table tr:hover { background: #f8fafc; }
+  .q-table .win { color: #10b981; font-weight: 600; }
+  .q-table .lose { color: #ef4444; }
+  
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge-win { background: #d1fae5; color: #065f46; }
+  .badge-lose { background: #fee2e2; color: #991b1b; }
+  
+  .summary-box {
+    background: #fef3c7;
+    border: 1px solid #fbbf24;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 16px;
+  }
+  .summary-box h3 {
+    font-size: 15px;
+    color: #92400e;
+    margin-bottom: 8px;
+  }
+  .summary-box ul {
+    padding-left: 20px;
+    font-size: 13px;
+    color: #78350f;
+    line-height: 1.8;
+  }
+  
+  .note {
+    background: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #1e3a5f;
+  }
+  
+  @media (max-width: 900px) {
+    .metrics-grid { grid-template-columns: repeat(3, 1fr); }
+    .chart-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>CASG 完整实验结果报告</h1>
+<p class="subtitle">基于 14/17 道题评估数据 · θ_H=1.0, θ_M=1.0, θ_L=0.0 · 37 名学生 · 加权平均</p>
+
+<!-- 1. 整卷指标对比 -->
+<div class="section">
+  <div class="section-title">一、整卷指标对比（加权平均到100分制）</div>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label">QWK (10 bins)</div>
+      <div class="metric-row"><span class="metric-dot dot-human"></span><span class="metric-value">—</span></div>
+      <div class="metric-row"><span class="metric-dot dot-llm"></span><span class="metric-value">0.4589</span></div>
+      <div class="metric-row"><span class="metric-dot dot-casg"></span><span class="metric-value">0.0000</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Pearson r</div>
+      <div class="metric-row"><span class="metric-dot dot-human"></span><span class="metric-value">—</span></div>
+      <div class="metric-row"><span class="metric-dot dot-llm"></span><span class="metric-value">0.6190</span></div>
+      <div class="metric-row"><span class="metric-dot dot-casg"></span><span class="metric-value">0.0518</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Spearman ρ</div>
+      <div class="metric-row"><span class="metric-dot dot-human"></span><span class="metric-value">—</span></div>
+      <div class="metric-row"><span class="metric-dot dot-llm"></span><span class="metric-value">0.4768</span></div>
+      <div class="metric-row"><span class="metric-dot dot-casg"></span><span class="metric-value">0.0853</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">MAE</div>
+      <div class="metric-row"><span class="metric-dot dot-human"></span><span class="metric-value">—</span></div>
+      <div class="metric-row"><span class="metric-dot dot-llm"></span><span class="metric-value">5.90</span></div>
+      <div class="metric-row"><span class="metric-dot dot-casg"></span><span class="metric-value">46.24</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">均值</div>
+      <div class="metric-row"><span class="metric-dot dot-human"></span><span class="metric-value">79.44</span></div>
+      <div class="metric-row"><span class="metric-dot dot-llm"></span><span class="metric-value">76.84</span></div>
+      <div class="metric-row"><span class="metric-dot dot-casg"></span><span class="metric-value">33.20</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">标准差</div>
+      <div class="metric-row"><span class="metric-dot dot-human"></span><span class="metric-value">6.79</span></div>
+      <div class="metric-row"><span class="metric-dot dot-llm"></span><span class="metric-value">9.16</span></div>
+      <div class="metric-row"><span class="metric-dot dot-casg"></span><span class="metric-value">5.27</span></div>
+    </div>
+  </div>
+  <div class="note">
+    <strong>注：</strong>QWK/Pearson/Spearman 表示与人工评分的一致性；MAE 表示与人工评分的绝对误差。CASG 均值为 33.20，严重低于人工 79.44，说明 CASG 评分系统性偏低。
+  </div>
+</div>
+
+<!-- 2. 分布统计 -->
+<div class="section">
+  <div class="section-title">二、分数分布统计</div>
+  <table class="dist-table">
+    <thead>
+      <tr>
+        <th>评分方式</th>
+        <th>均值</th>
+        <th>标准差</th>
+        <th>最小值</th>
+        <th>最大值</th>
+        <th>与人工分差</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="label-human">人工评分</td><td>79.44</td><td>6.79</td><td>53.66</td><td>89.02</td><td>—</td></tr>
+      <tr><td class="label-llm">LLM v2</td><td>76.84</td><td>9.16</td><td>45.34</td><td>88.55</td><td>-2.60</td></tr>
+      <tr><td class="label-casg">CASG</td><td>33.20</td><td>5.27</td><td>21.28</td><td>41.14</td><td>-46.24</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 3. 图表：整卷指标柱状图 -->
+<div class="section">
+  <div class="section-title">三、整卷指标对比图</div>
+  <div class="chart-container">
+    <canvas id="metricsBarChart"></canvas>
+  </div>
+</div>
+
+<!-- 4. 逐题 QWK 对比 -->
+<div class="section">
+  <div class="section-title">四、逐题 QWK 对比（LLM v2 vs CASG）</div>
+  <div class="chart-container" style="height: 450px;">
+    <canvas id="qwkCompareChart"></canvas>
+  </div>
+</div>
+
+<!-- 5. 逐题指标详情表 -->
+<div class="section">
+  <div class="section-title">五、逐题指标详情</div>
+  <div style="overflow-x:auto;">
+  <table class="q-table" id="perQuestionTable">
+    <thead>
+      <tr>
+        <th rowspan="2">题目</th>
+        <th rowspan="2">N</th>
+        <th colspan="3">QWK</th>
+        <th colspan="2">Pearson r</th>
+        <th colspan="2">Spearman ρ</th>
+        <th colspan="2">MAE</th>
+      </tr>
+      <tr>
+        <th>LLM v2</th><th>CASG</th><th>Δ</th>
+        <th>LLM v2</th><th>CASG</th>
+        <th>LLM v2</th><th>CASG</th>
+        <th>LLM v2</th><th>CASG</th>
+      </tr>
+    </thead>
+    <tbody id="qTableBody"></tbody>
+  </table>
+  </div>
+  <div style="text-align:center; margin-top:14px; font-size:13px; color:#6b7280;">
+    CASG胜: <span id="casgWinCount" style="color:#10b981; font-weight:700;">0</span> 题 &nbsp;|&nbsp;
+    LLM胜: <span id="llmWinCount" style="color:#ef4444; font-weight:700;">0</span> 题
+  </div>
+</div>
+
+<!-- 6. 散点图：CASG vs 人工 -->
+<div class="section">
+  <div class="section-title">六、CASG 分数 vs 人工评分（散点图）</div>
+  <div class="chart-container" style="height: 420px;">
+    <canvas id="scatterChart"></canvas>
+  </div>
+</div>
+
+<!-- 7. 摘要与结论 -->
+<div class="section">
+  <div class="section-title">七、实验结论</div>
+  <div class="summary-box">
+    <h3>关键发现</h3>
+    <ul>
+      <li><strong>CASG 系统性偏低 46 分</strong>：CASG 加权均值 33.20，远低于人工评分 79.44。原因是大量题目的要点评估中 partial 比例过高，且缺失题目（HW1_Q1, HW1_Q2）导致加权分配不均。</li>
+      <li><strong>整卷 QWK = 0.000</strong>：CASG 与人工评分的排序一致性完全失效，11/14 道题 QWK 为 0，说明 CASG 分数缺乏区分度。</li>
+      <li><strong>Pearson r = 0.052</strong>：CASG 与人工评分几乎无线性相关性，表明 CASG 评分无法反映学生的真实水平差异。</li>
+      <li><strong>PID 优化失败</strong>：θ 从初始 (1.0, 1.0, 0.0) 调整到 (1.0, 0.1, 0.1) 后 QWK 降为 0，说明问题不在于 θ 参数，而是要点评估本身质量问题。</li>
+      <li><strong>LLM v2 仍然优于 CASG</strong>：LLM v2 的 QWK=0.459, Pearson r=0.619，显著优于 CASG。</li>
+    </ul>
+  </div>
+  <div class="note" style="margin-top:16px;">
+    <strong>数据完整性问题：</strong>HW1_Q1 和 HW1_Q2 的评估数据缺失（文件不存在），导致这两题没有 CASG 分数。虽然加权平均会补偿权重，但这会影响整卷分数的准确性。
+  </div>
+</div>
+
+</div>
+
+<script>
+// 数据
+const perQuestionData = {
+  "HW1_Q3": {"n":37,"llm_qwk":0.4212,"casg_qwk":0.5082,"llm_r":0.6579,"casg_r":0.5797,"llm_rho":0.7477,"casg_rho":0.5983,"llm_mae":13.10,"casg_mae":14.36},
+  "HW2_Q1": {"n":37,"llm_qwk":0.0421,"casg_qwk":0.0000,"llm_r":0.1234,"casg_r":0.0196,"llm_rho":0.0251,"casg_rho":0.1010,"llm_mae":11.46,"casg_mae":49.31},
+  "HW2_Q2": {"n":37,"llm_qwk":0.1954,"casg_qwk":0.0000,"llm_r":0.1859,"casg_r":0.3192,"llm_rho":-0.0020,"casg_rho":0.0900,"llm_mae":10.27,"casg_mae":46.90},
+  "HW2_Q3": {"n":37,"llm_qwk":0.5376,"casg_qwk":0.0000,"llm_r":0.6444,"casg_r":0.4654,"llm_rho":0.4989,"casg_rho":0.4444,"llm_mae":15.78,"casg_mae":44.24},
+  "HW3_Q1": {"n":37,"llm_qwk":0.3114,"casg_qwk":0.4249,"llm_r":0.3549,"casg_r":0.5052,"llm_rho":0.1952,"casg_rho":0.5088,"llm_mae":10.05,"casg_mae":21.58},
+  "HW3_Q2": {"n":37,"llm_qwk":0.2252,"casg_qwk":0.0000,"llm_r":0.4612,"casg_r":0.5761,"llm_rho":0.4254,"casg_rho":0.6280,"llm_mae":12.54,"casg_mae":64.54},
+  "HW3_Q3": {"n":21,"llm_qwk":0.7299,"casg_qwk":0.7035,"llm_r":0.7460,"casg_r":0.6803,"llm_rho":0.8003,"casg_rho":0.7441,"llm_mae":13.67,"casg_mae":10.50},
+  "HW4_Q2": {"n":37,"llm_qwk":0.3389,"casg_qwk":0.0034,"llm_r":0.2723,"casg_r":-0.0051,"llm_rho":0.2239,"casg_rho":0.0550,"llm_mae":13.19,"casg_mae":56.42},
+  "HW4_Q3": {"n":37,"llm_qwk":0.2279,"casg_qwk":0.0000,"llm_r":0.3579,"casg_r":0.4820,"llm_rho":0.3678,"casg_rho":0.5248,"llm_mae":14.76,"casg_mae":51.48},
+  "HW4_Q4": {"n":36,"llm_qwk":0.4720,"casg_qwk":0.1411,"llm_r":0.4825,"casg_r":0.4310,"llm_rho":0.3832,"casg_rho":0.3897,"llm_mae":23.56,"casg_mae":51.84},
+  "HW4_Q5": {"n":37,"llm_qwk":0.7465,"casg_qwk":0.0095,"llm_r":0.6570,"casg_r":0.1022,"llm_rho":0.5264,"casg_rho":0.2287,"llm_mae":9.32,"casg_mae":60.62},
+  "HW5_Q1": {"n":36,"llm_qwk":-0.0800,"casg_qwk":0.0000,"llm_r":-0.0900,"casg_r":0.0850,"llm_rho":-0.0660,"casg_rho":0.1197,"llm_mae":10.83,"casg_mae":65.00},
+  "HW5_Q2": {"n":36,"llm_qwk":0.3836,"casg_qwk":0.0000,"llm_r":0.3969,"casg_r":0.4402,"llm_rho":0.3246,"casg_rho":0.4248,"llm_mae":9.61,"casg_mae":66.89},
+  "HW5_Q3": {"n":36,"llm_qwk":0.2204,"casg_qwk":0.0000,"llm_r":0.1820,"casg_r":0.0025,"llm_rho":0.1395,"casg_rho":0.1049,"llm_mae":20.06,"casg_mae":58.93}
+};
+
+const qids = Object.keys(perQuestionData);
+const casgWin = qids.filter(q => perQuestionData[q].casg_qwk > perQuestionData[q].llm_qwk).length;
+const llmWin = qids.length - casgWin;
+document.getElementById('casgWinCount').textContent = casgWin;
+document.getElementById('llmWinCount').textContent = llmWin;
+
+// 填充表格
+const tbody = document.getElementById('qTableBody');
+qids.forEach(qid => {
+  const d = perQuestionData[qid];
+  const diff = d.casg_qwk - d.llm_qwk;
+  const isWin = diff > 0;
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td style="text-align:left; font-weight:600;">${qid}</td>
+    <td>${d.n}</td>
+    <td>${d.llm_qwk.toFixed(4)}</td>
+    <td>${d.casg_qwk.toFixed(4)}</td>
+    <td class="${isWin ? 'win' : 'lose'}">${diff > 0 ? '+' : ''}${diff.toFixed(4)}</td>
+    <td>${d.llm_r.toFixed(4)}</td>
+    <td>${d.casg_r.toFixed(4)}</td>
+    <td>${d.llm_rho.toFixed(4)}</td>
+    <td>${d.casg_rho.toFixed(4)}</td>
+    <td>${d.llm_mae.toFixed(2)}</td>
+    <td>${d.casg_mae.toFixed(2)}</td>
+  `;
+  tbody.appendChild(row);
+});
+
+// 图表颜色
+const colors = {
+  human: '#3b82f6',
+  llm: '#f59e0b',
+  casg: '#10b981'
+};
+
+// 图1: 整卷指标柱状图
+new Chart(document.getElementById('metricsBarChart'), {
+  type: 'bar',
+  data: {
+    labels: ['QWK (10 bins)', 'Pearson r', 'Spearman ρ', 'MAE'],
+    datasets: [
+      {
+        label: 'LLM v2',
+        data: [0.4589, 0.6190, 0.4768, 5.90],
+        backgroundColor: colors.llm + 'cc',
+        borderColor: colors.llm,
+        borderWidth: 1,
+        borderRadius: 4
+      },
+      {
+        label: 'CASG',
+        data: [0.0000, 0.0518, 0.0853, 46.24],
+        backgroundColor: colors.casg + 'cc',
+        borderColor: colors.casg,
+        borderWidth: 1,
+        borderRadius: 4
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { font: { size: 13 } } },
+      title: { display: true, text: 'LLM v2 vs CASG 与人工评分的一致性指标', font: { size: 15 } }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: { display: true, text: '指标值' }
+      }
+    }
+  }
+});
+
+// 图2: 逐题 QWK 对比
+new Chart(document.getElementById('qwkCompareChart'), {
+  type: 'bar',
+  data: {
+    labels: qids,
+    datasets: [
+      {
+        label: 'LLM v2 QWK',
+        data: qids.map(q => perQuestionData[q].llm_qwk),
+        backgroundColor: colors.llm + 'aa',
+        borderColor: colors.llm,
+        borderWidth: 1,
+        borderRadius: 3
+      },
+      {
+        label: 'CASG QWK',
+        data: qids.map(q => perQuestionData[q].casg_qwk),
+        backgroundColor: colors.casg + 'aa',
+        borderColor: colors.casg,
+        borderWidth: 1,
+        borderRadius: 3
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { font: { size: 13 } } },
+      title: { display: true, text: '逐题 QWK 对比（LLM v2 vs CASG）', font: { size: 15 } }
+    },
+    scales: {
+      x: {
+        ticks: { font: { size: 11 }, maxRotation: 45, minRotation: 45 }
+      },
+      y: {
+        beginAtZero: true,
+        max: 0.8,
+        title: { display: true, text: 'QWK (10 bins)' }
+      }
+    }
+  }
+});
+
+// 图3: 散点图 CASG vs 人工
+const humanScores = {"S001":66.77,"S002":86.59,"S048":75.91,"S049":84.76,"S050":78.96,"S051":77.13,"S052":89.02,"S053":78.35,"S054":85.06,"S055":87.80,"S056":85.37,"S057":86.59,"S058":83.54,"S059":79.88,"S060":74.09,"S061":82.01,"S062":74.39,"S063":77.44,"S064":83.54,"S065":84.15,"S066":82.93,"S067":79.57,"S068":85.06,"S069":81.71,"S070":53.66,"S071":87.20,"S072":72.56,"S073":79.27,"S074":75.91,"S075":84.76,"S077":84.45,"S078":70.12,"S079":76.83,"S080":73.17,"S081":76.52,"S082":75.00,"S083":79.27};
+const casgScores = {"S001":25.34,"S002":40.69,"S048":32.95,"S049":24.11,"S050":38.40,"S051":33.25,"S052":39.09,"S053":38.79,"S054":39.77,"S055":31.32,"S056":37.13,"S057":31.69,"S058":32.38,"S059":35.36,"S060":39.92,"S061":21.94,"S062":33.96,"S063":34.25,"S064":32.61,"S065":27.26,"S066":32.13,"S067":33.28,"S068":29.06,"S069":38.68,"S070":38.36,"S071":30.03,"S072":25.01,"S073":33.02,"S074":27.32,"S075":39.01,"S077":34.67,"S078":33.59,"S079":41.14,"S080":29.68,"S081":35.94,"S082":21.28,"S083":35.89};
+const llmScores = {"S001":62.35,"S002":87.79,"S048":79.49,"S049":83.50,"S050":73.22,"S051":77.93,"S052":88.55,"S053":82.41,"S054":74.97,"S055":81.92,"S056":81.95,"S057":81.25,"S058":82.29,"S059":85.30,"S060":77.79,"S061":55.28,"S062":74.59,"S063":83.73,"S064":79.34,"S065":72.38,"S066":78.70,"S067":67.50,"S068":86.88,"S069":75.88,"S070":45.34,"S071":78.14,"S072":62.56,"S073":77.38,"S074":63.90,"S075":82.67,"S077":81.28,"S078":81.04,"S079":88.29,"S080":80.90,"S081":80.38,"S082":74.35,"S083":71.83};
+
+const sids = Object.keys(humanScores);
+const scatterDataCasg = sids.map(s => ({x: humanScores[s], y: casgScores[s]}));
+const scatterDataLlm = sids.map(s => ({x: humanScores[s], y: llmScores[s]}));
+
+new Chart(document.getElementById('scatterChart'), {
+  type: 'scatter',
+  data: {
+    datasets: [
+      {
+        label: 'CASG vs 人工',
+        data: scatterDataCasg,
+        backgroundColor: colors.casg + 'aa',
+        borderColor: colors.casg,
+        pointRadius: 6,
+        pointHoverRadius: 8
+      },
+      {
+        label: 'LLM v2 vs 人工',
+        data: scatterDataLlm,
+        backgroundColor: colors.llm + '88',
+        borderColor: colors.llm,
+        pointRadius: 5,
+        pointHoverRadius: 7
+      },
+      {
+        label: '理想线 (y=x)',
+        type: 'line',
+        data: [{x:50, y:50}, {x:95, y:95}],
+        borderColor: '#94a3b8',
+        borderDash: [6,4],
+        pointRadius: 0,
+        borderWidth: 2
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { font: { size: 13 } } },
+      title: { display: true, text: 'CASG / LLM v2 分数 vs 人工评分', font: { size: 15 } }
+    },
+    scales: {
+      x: { title: { display: true, text: '人工评分' }, min: 45, max: 95 },
+      y: { title: { display: true, text: '评分方法分数' }, min: 20, max: 95 }
+    }
+  }
+});
+</script>
+</body>
+</html>

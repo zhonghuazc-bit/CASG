@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW1_Q1 子要点覆盖分布分析</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { font-size: 24px; margin-bottom: 0.5rem; color: #1a1a1a; }
+    h2 { font-size: 18px; margin: 2rem 0 1rem; color: #333; }
+    .subtitle { color: #666; margin-bottom: 2rem; }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .chart-container {
+      position: relative;
+      height: 400px;
+      margin: 1rem 0;
+    }
+    .chart-tall {
+      height: 500px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .stat-box {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 6px;
+      border-left: 4px solid #378ADD;
+    }
+    .stat-label { font-size: 13px; color: #666; }
+    .stat-value { font-size: 24px; font-weight: 500; color: #1a1a1a; margin-top: 0.25rem; }
+    .heatmap-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    table {
+      border-collapse: collapse;
+      font-size: 13px;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background: #f0f0f0;
+      font-weight: 500;
+      position: sticky;
+      top: 0;
+    }
+    .covered {
+      background: #d4edda;
+      color: #155724;
+    }
+    .missing {
+      background: #f8d7da;
+      color: #721c24;
+    }
+    .summary-text {
+      background: #e7f3ff;
+      padding: 1rem;
+      border-left: 4px solid #378ADD;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HW1_Q1 子要点覆盖分布分析</h1>
+    <p class="subtitle">基于37名学生的LLM要点覆盖度评估结果</p>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-label">总学生数</div>
+        <div class="stat-value">37</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">总子要点数</div>
+        <div class="stat-value">13</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">要点1子要点</div>
+        <div class="stat-value">7个</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">要点2子要点</div>
+        <div class="stat-value">6个</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>子要点覆盖率分布（按要点分组）</h2>
+      <div class="chart-container chart-tall">
+        <canvas id="subpointChart"></canvas>
+      </div>
+      <div class="summary-text">
+        <strong>关键发现：</strong>要点1中"连接操作低效"覆盖率最高(91.9%)，"SPARQL转SQL"覆盖率为0%；要点2中"物理引用指针"覆盖率最高(86.5%)，"解决多跳瓶颈"(0%)和"流式遍历"(2.7%)几乎无人覆盖。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>学生覆盖子要点数量分布</h2>
+      <div class="chart-container">
+        <canvas id="coverageCountChart"></canvas>
+      </div>
+      <div class="summary-text">
+        <strong>分布特征：</strong>学生覆盖子要点数量呈正态分布，集中在5-8个子要点（20名学生，占54%）。覆盖10个及以上的学生仅5名（13.5%），覆盖3个及以下的学生仅5名（13.5%）。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>要点覆盖率对比（要点1 vs 要点2）</h2>
+      <div class="chart-container">
+        <canvas id="comparisonChart"></canvas>
+      </div>
+      <div class="summary-text">
+        <strong>对比分析：</strong>要点2的核心概念（无索引邻接、物理指针、O(1)代价）覆盖率普遍高于要点1，说明学生对原生图数据库的优势理解更好。要点1的Hexastore细节（六排列、单点选择）掌握较弱。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>子要点覆盖热力图</h2>
+      <div class="heatmap-container">
+        <table id="heatmapTable">
+          <thead>
+            <tr>
+              <th>学生ID</th>
+              <th colspan="7" style="text-align:center; background:#d1ecf1;">要点1：关系表存储缺陷</th>
+              <th colspan="6" style="text-align:center; background:#d4edda;">要点2：原生图数据库优势</th>
+              <th>覆盖总数</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th class="covered">SPARQL转SQL</th>
+              <th class="covered">多层自连接</th>
+              <th class="covered">百亿级代价</th>
+              <th class="covered">Hexastore</th>
+              <th class="covered">单点选择</th>
+              <th class="covered">连接低效</th>
+              <th class="covered">索引维护</th>
+              <th class="covered">无索引邻接</th>
+              <th class="covered">物理指针</th>
+              <th class="covered">O(1)代价</th>
+              <th class="covered">规模脱钩</th>
+              <th class="covered">多跳瓶颈</th>
+              <th class="covered">流式遍历</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="heatmapBody"></tbody>
+        </table>
+      </div>
+      <div class="summary-text">
+        <strong>阅读指南：</strong>绿色表示该学生覆盖了此子要点，红色表示未覆盖。可以清晰看到哪些子要点是普遍薄弱点（如SPARQL转SQL、多跳瓶颈、流式遍历）。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>关键薄弱子要点TOP5</h2>
+      <div class="chart-container">
+        <canvas id="weakPointsChart"></canvas>
+      </div>
+      <div class="summary-text">
+        <strong>教学建议：</strong>SPARQL转SQL、Hexastore六排列、索引维护代价等概念需要在教学中重点强调。流式遍历和多跳瓶颈的概念较为抽象，建议增加可视化案例和实例演示。
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script>
+    // 数据准备
+    const studentData = {"S002": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": false, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": true}}, "S048": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": false, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S049": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S050": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S054": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S057": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S060": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": false, "索引维护代价": true}, "kp2": {"无索引邻接": false, "物理引用指针": false, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S063": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S065": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S067": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S068": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S069": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S070": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S071": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S072": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": false, "物理引用指针": false, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S073": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S075": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S080": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S082": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S051": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": false, "物理引用指针": false, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S052": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S053": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S061": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": false, "索引维护代价": false}, "kp2": {"无索引邻接": false, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S062": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": false, "物理引用指针": false, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S064": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": false, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S078": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": false, "Hexastore六排列": true, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S055": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S058": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S059": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S074": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": true, "解决多跳瓶颈": false, "流式遍历": false}}, "S077": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S081": {"kp1": {"SPARQL转SQL": false, "多层自连接": false, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S083": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S056": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": false, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S079": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": true, "单点选择效率": true, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S001": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": false, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": true}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": true, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}, "S066": {"kp1": {"SPARQL转SQL": false, "多层自连接": true, "百亿级大表代价": true, "Hexastore六排列": false, "单点选择效率": false, "连接操作低效": true, "索引维护代价": false}, "kp2": {"无索引邻接": true, "物理引用指针": true, "O(1)导航代价": false, "与规模脱钩": false, "解决多跳瓶颈": false, "流式遍历": false}}};
+
+    const kp1Subpoints = ["SPARQL转SQL", "多层自连接", "百亿级大表代价", "Hexastore六排列", "单点选择效率", "连接操作低效", "索引维护代价"];
+    const kp2Subpoints = ["无索引邻接", "物理引用指针", "O(1)导航代价", "与规模脱钩", "解决多跳瓶颈", "流式遍历"];
+
+    // 计算每个子要点的覆盖数
+    const subpointCoverage = {};
+    [...kp1Subpoints, ...kp2Subpoints].forEach(sp => {
+      subpointCoverage[sp] = 0;
+    });
+
+    const studentCoverageCounts = {};
+    
+    Object.entries(studentData).forEach(([sid, data]) => {
+      let count = 0;
+      kp1Subpoints.forEach(sp => {
+        if (data.kp1[sp]) {
+          subpointCoverage[sp]++;
+          count++;
+        }
+      });
+      kp2Subpoints.forEach(sp => {
+        if (data.kp2[sp]) {
+          subpointCoverage[sp]++;
+          count++;
+        }
+      });
+      studentCoverageCounts[sid] = count;
+    });
+
+    // 图表1：子要点覆盖率分布
+    new Chart(document.getElementById('subpointChart'), {
+      type: 'bar',
+      data: {
+        labels: [...kp1Subpoints, ...kp2Subpoints],
+        datasets: [{
+          label: '覆盖人数',
+          data: [...kp1Subpoints, ...kp2Subpoints].map(sp => subpointCoverage[sp]),
+          backgroundColor: [...kp1Subpoints, ...kp2Subpoints].map((sp, i) => 
+            i < kp1Subpoints.length ? 'rgba(55, 138, 221, 0.7)' : 'rgba(28, 178, 110, 0.7)'
+          ),
+          borderColor: [...kp1Subpoints, ...kp2Subpoints].map((sp, i) => 
+            i < kp1Subpoints.length ? 'rgba(55, 138, 221, 1)' : 'rgba(28, 178, 110, 1)'
+          ),
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const count = context.parsed.y;
+                const pct = ((count / 37) * 100).toFixed(1);
+                return `覆盖人数: ${count}/37 (${pct}%)`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 37,
+            ticks: {
+              stepSize: 5,
+              callback: function(value) {
+                return value + '人';
+              }
+            },
+            title: {
+              display: true,
+              text: '覆盖学生数'
+            }
+          },
+          x: {
+            ticks: {
+              maxRotation: 45,
+              minRotation: 45
+            }
+          }
+        }
+      }
+    });
+
+    // 图表2：学生覆盖子要点数量分布
+    const coverageDistribution = {};
+    Object.values(studentCoverageCounts).forEach(count => {
+      coverageDistribution[count] = (coverageDistribution[count] || 0) + 1;
+    });
+
+    const sortedCounts = Object.keys(coverageDistribution).map(Number).sort((a, b) => a - b);
+    
+    new Chart(document.getElementById('coverageCountChart'), {
+      type: 'bar',
+      data: {
+        labels: sortedCounts.map(c => `${c}个子要点`),
+        datasets: [{
+          label: '学生数',
+          data: sortedCounts.map(c => coverageDistribution[c]),
+          backgroundColor: 'rgba(139, 195, 74, 0.7)',
+          borderColor: 'rgba(139, 195, 74, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const count = context.parsed.y;
+                const pct = ((count / 37) * 100).toFixed(1);
+                return `${count}名学生 (${pct}%)`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 1,
+              callback: function(value) {
+                return value + '人';
+              }
+            },
+            title: {
+              display: true,
+              text: '学生数量'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: '覆盖子要点数（共13个）'
+            }
+          }
+        }
+      }
+    });
+
+    // 图表3：要点1 vs 要点2对比
+    const avgKP1 = kp1Subpoints.reduce((sum, sp) => sum + subpointCoverage[sp], 0) / kp1Subpoints.length / 37 * 100;
+    const avgKP2 = kp2Subpoints.reduce((sum, sp) => sum + subpointCoverage[sp], 0) / kp2Subpoints.length / 37 * 100;
+
+    new Chart(document.getElementById('comparisonChart'), {
+      type: 'bar',
+      data: {
+        labels: ['要点1：关系表存储缺陷', '要点2：原生图数据库优势'],
+        datasets: [{
+          label: '平均覆盖率',
+          data: [avgKP1, avgKP2],
+          backgroundColor: ['rgba(55, 138, 221, 0.7)', 'rgba(28, 178, 110, 0.7)'],
+          borderColor: ['rgba(55, 138, 221, 1)', 'rgba(28, 178, 110, 1)'],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: 'y',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `平均覆盖率: ${context.parsed.x.toFixed(1)}%`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            max: 100,
+            ticks: {
+              callback: function(value) {
+                return value + '%';
+              }
+            },
+            title: {
+              display: true,
+              text: '平均覆盖率 (%)'
+            }
+          }
+        }
+      }
+    });
+
+    // 图表4：关键薄弱子要点TOP5
+    const sortedSubpoints = [...kp1Subpoints, ...kp2Subpoints]
+      .map(sp => ({ name: sp, coverage: subpointCoverage[sp] }))
+      .sort((a, b) => a.coverage - b.coverage)
+      .slice(0, 5);
+
+    new Chart(document.getElementById('weakPointsChart'), {
+      type: 'bar',
+      data: {
+        labels: sortedSubpoints.map(sp => sp.name),
+        datasets: [{
+          label: '覆盖人数',
+          data: sortedSubpoints.map(sp => sp.coverage),
+          backgroundColor: 'rgba(220, 53, 69, 0.7)',
+          borderColor: 'rgba(220, 53, 69, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: 'y',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const count = context.parsed.x;
+                const pct = ((count / 37) * 100).toFixed(1);
+                return `覆盖人数: ${count}/37 (${pct}%)`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            max: 37,
+            ticks: {
+              stepSize: 2,
+              callback: function(value) {
+                return value + '人';
+              }
+            },
+            title: {
+              display: true,
+              text: '覆盖学生数（越少越薄弱）'
+            }
+          }
+        }
+      }
+    });
+
+    // 生成热力图表格
+    const tbody = document.getElementById('heatmapBody');
+    const sortedStudents = Object.keys(studentData).sort();
+    
+    sortedStudents.forEach(sid => {
+      const row = document.createElement('tr');
+      const data = studentData[sid];
+      
+      // 学生ID
+      const tdSid = document.createElement('td');
+      tdSid.textContent = sid;
+      tdSid.style.fontWeight = '500';
+      row.appendChild(tdSid);
+      
+      // 要点1子要点
+      let totalCount = 0;
+      kp1Subpoints.forEach(sp => {
+        const td = document.createElement('td');
+        td.className = data.kp1[sp] ? 'covered' : 'missing';
+        td.textContent = data.kp1[sp] ? '✓' : '×';
+        td.style.textAlign = 'center';
+        row.appendChild(td);
+        if (data.kp1[sp]) totalCount++;
+      });
+      
+      // 要点2子要点
+      kp2Subpoints.forEach(sp => {
+        const td = document.createElement('td');
+        td.className = data.kp2[sp] ? 'covered' : 'missing';
+        td.textContent = data.kp2[sp] ? '✓' : '×';
+        td.style.textAlign = 'center';
+        row.appendChild(td);
+        if (data.kp2[sp]) totalCount++;
+      });
+      
+      // 覆盖总数
+      const tdCount = document.createElement('td');
+      tdCount.textContent = totalCount;
+      tdCount.style.fontWeight = '500';
+      tdCount.style.textAlign = 'center';
+      tdCount.style.background = totalCount >= 10 ? '#d4edda' : totalCount >= 7 ? '#fff3cd' : '#f8d7da';
+      row.appendChild(tdCount);
+      
+      tbody.appendChild(row);
+    });
+  </script>
+</body>
+</html>

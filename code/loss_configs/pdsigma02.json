@@ -1,0 +1,9 @@
+{
+  "name": "pdsigma02",
+  "label": "pdsigma02: |P-0.20|+|D-0.30|+0.1|σ-10| (绝对偏差, σ×0.1, pdsigma01旧副本)",
+  "terms": [
+    {"metric": "P", "weight": 1.0, "target": 0.20},
+    {"metric": "D", "weight": 1.0, "target": 0.30},
+    {"metric": "sigma", "weight": 0.1, "target": 10.0}
+  ]
+}

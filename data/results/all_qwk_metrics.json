@@ -1,0 +1,14 @@
+{
+  "question_level": {
+    "LLM_V1": 0.050029994001199674,
+    "LLM_V2": 0.34849685655975005,
+    "Normalin_calibrated": 0.346606574456206,
+    "PCA_calibrated": 0.37221102619026514
+  },
+  "student_level": {
+    "LLM_V1": 0.1087026852151406,
+    "LLM_V2": 0.7400228050171038,
+    "Normalin_calibrated": 0.6892039258451472,
+    "PCA_calibrated": 0.7752956636005257
+  }
+}

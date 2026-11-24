@@ -1,0 +1,145 @@
+{
+  "methods": {
+    "Human": {
+      "status": "RECOMPUTED_FROM_SOURCE",
+      "n_students": 37,
+      "recomputed": {
+        "P": 1.0,
+        "σ": 6.214,
+        "r": 1.0,
+        "ρ": 1.0,
+        "MAE": 0.0,
+        "QWK": 1.0
+      },
+      "published": {
+        "P": 0.195,
+        "D": 0.312,
+        "σ": 10.2,
+        "r": 1.0,
+        "ρ": 1.0,
+        "QWK": 1.0,
+        "MAE": 0.0
+      }
+    },
+    "FEW-LLM": {
+      "status": "RECOMPUTED_FROM_SOURCE",
+      "n_students": 37,
+      "recomputed": {
+        "P": 0.9459,
+        "σ": 7.27,
+        "r": 0.6136,
+        "ρ": 0.5495,
+        "MAE": 5.6075,
+        "QWK": 0.464
+      },
+      "published": {
+        "P": 0.241,
+        "D": 0.181,
+        "σ": 7.84,
+        "r": 0.852,
+        "ρ": 0.842,
+        "QWK": 0.742,
+        "MAE": 4.89
+      }
+    },
+    "Linear": {
+      "status": "RECOMPUTED_FROM_SOURCE",
+      "n_students": 37,
+      "recomputed": {
+        "P": 0.973,
+        "σ": 6.5785,
+        "r": 0.5324,
+        "ρ": 0.535,
+        "MAE": 5.5944,
+        "QWK": 0.4749
+      },
+      "published": {
+        "P": 0.216,
+        "D": 0.161,
+        "σ": 6.42,
+        "r": 0.642,
+        "ρ": 0.623,
+        "QWK": 0.598,
+        "MAE": 5.06
+      }
+    },
+    "CASG": {
+      "status": "MISALIGNED_INTERMEDIATE",
+      "n_students": 37,
+      "recomputed": {
+        "P": 0.973,
+        "σ": 6.5084,
+        "r": 0.4893,
+        "ρ": 0.4187,
+        "MAE": 5.0556,
+        "QWK": 0.4864
+      },
+      "published": {
+        "P": 0.201,
+        "D": 0.211,
+        "σ": 13.62,
+        "r": 0.918,
+        "ρ": 0.641,
+        "QWK": 0.418,
+        "MAE": 5.01
+      }
+    },
+    "HOL-LLM": {
+      "status": "SOURCE_NOT_FOUND",
+      "note": "用户指向的 HW*_evaluations*.json 为 CASG 结构化逐题评估（keypoints/coverage/quality_band），非整体式分数；项目内无独立 holistic LLM 分数字典。",
+      "published": {
+        "P": 0.267,
+        "D": 0.192,
+        "σ": 7.84,
+        "r": 0.621,
+        "ρ": 0.615,
+        "QWK": 0.62,
+        "MAE": 4.89
+      }
+    }
+  },
+  "_warnings": [
+    "CASG: casg_new 的 casg 总分与人工相关性仅 0.489，远低于论文 0.918，属未对齐中间版本；学生级 CASG 校准分数（r=0.918）未在当前文件找到，仅 alpha_optimization_results.json 含聚合指标。",
+    "HOL-LLM: 整体式 LLM 评分源缺失。HW*_evaluations*.json 是 CASG 结构化评估，并非 holistic 分数。"
+  ],
+  "_scale_note": "重算统一采用“逐题 0-100 均值”映射到 0-100 学生分；论文发表值基于其原始 0-100 表示，二者尺度/归一化口径可能不同，故重算值与发表值不可直接比较。",
+  "_common_students": [
+    "S001",
+    "S002",
+    "S048",
+    "S049",
+    "S050",
+    "S051",
+    "S052",
+    "S053",
+    "S054",
+    "S055",
+    "S056",
+    "S057",
+    "S058",
+    "S059",
+    "S060",
+    "S061",
+    "S062",
+    "S063",
+    "S064",
+    "S065",
+    "S066",
+    "S067",
+    "S068",
+    "S069",
+    "S070",
+    "S071",
+    "S072",
+    "S073",
+    "S074",
+    "S075",
+    "S077",
+    "S078",
+    "S079",
+    "S080",
+    "S081",
+    "S082",
+    "S083"
+  ]
+}

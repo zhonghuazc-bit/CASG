@@ -1,0 +1,10 @@
+{
+  "name": "paper",
+  "label": "paper_rel: |P-0.20|/0.20 + |D-0.30|/0.30 + 0.1|σ-10|/10 + 0.5(1-r) (相对偏差)",
+  "terms": [
+    {"metric": "P", "weight": 1.0, "target": 0.20, "deviation": "relative"},
+    {"metric": "D", "weight": 1.0, "target": 0.30, "deviation": "relative"},
+    {"metric": "sigma", "weight": 0.1, "target": 10.0, "deviation": "relative"},
+    {"metric": "r", "weight": 0.5, "kind": "one_minus"}
+  ]
+}

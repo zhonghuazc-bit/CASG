@@ -1,0 +1,10 @@
+{
+  "name": "paper_abs",
+  "label": "paper_abs: |P-0.20|+|D-0.30|+0.1|σ-10|+0.5(1-r) (绝对偏差, 论文原损失)",
+  "terms": [
+    {"metric": "P", "weight": 1.0, "target": 0.20},
+    {"metric": "D", "weight": 1.0, "target": 0.30},
+    {"metric": "sigma", "weight": 0.1, "target": 10.0},
+    {"metric": "r", "weight": 0.5, "kind": "one_minus"}
+  ]
+}

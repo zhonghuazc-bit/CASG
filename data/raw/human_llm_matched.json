@@ -1,0 +1,5303 @@
+[
+  {
+    "student_id": "S001",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 35
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 11.0,
+    "human_max": 15,
+    "human_norm": 73.33,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 11.0,
+    "human_max": 15,
+    "human_norm": 73.33,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 19.0,
+    "human_max": 20,
+    "human_norm": 95.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 83
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 9.0,
+    "human_max": 15,
+    "human_norm": 60.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 0.0,
+    "human_max": 15,
+    "human_norm": 0.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 83
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 15,
+    "human_norm": 66.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 11.0,
+    "human_max": 15,
+    "human_norm": 73.33,
+    "llm_score": 35
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 9.0,
+    "human_max": 15,
+    "human_norm": 60.0,
+    "llm_score": 25
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 11.0,
+    "human_max": 15,
+    "human_norm": 73.33,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 15,
+    "human_norm": 66.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 11.0,
+    "human_max": 15,
+    "human_norm": 73.33,
+    "llm_score": 82
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 11.0,
+    "human_max": 15,
+    "human_norm": 73.33,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 60
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 15,
+    "human_norm": 66.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 15,
+    "human_norm": 66.67,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 25
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 9.0,
+    "human_max": 15,
+    "human_norm": 60.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 0.0,
+    "human_max": 20,
+    "human_norm": 0.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 15,
+    "human_norm": 66.67,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 19.0,
+    "human_max": 20,
+    "human_norm": 95.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 13.0,
+    "human_max": 15,
+    "human_norm": 86.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 20,
+    "human_norm": 50.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 14.0,
+    "human_max": 15,
+    "human_norm": 93.33,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 83
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 10.0,
+    "human_max": 15,
+    "human_norm": 66.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW1_Q1",
+    "hw": "HW1",
+    "human_raw": 15.0,
+    "human_max": 15,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW1_Q2",
+    "hw": "HW1",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW1_Q3",
+    "hw": "HW1",
+    "human_raw": 12.0,
+    "human_max": 15,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 82
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 60
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 35
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 82
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 10.0,
+    "human_max": 20,
+    "human_norm": 50.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 11
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 9.0,
+    "human_max": 20,
+    "human_norm": 45.0,
+    "llm_score": 30
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 10.0,
+    "human_max": 20,
+    "human_norm": 50.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 9.0,
+    "human_max": 20,
+    "human_norm": 45.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 10.0,
+    "human_max": 20,
+    "human_norm": 50.0,
+    "llm_score": 40
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 82
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 35
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW2_Q1",
+    "hw": "HW2",
+    "human_raw": 10.0,
+    "human_max": 20,
+    "human_norm": 50.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW2_Q2",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW2_Q3",
+    "hw": "HW2",
+    "human_raw": 12.0,
+    "human_max": 20,
+    "human_norm": 60.0,
+    "llm_score": 40
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 10.0,
+    "human_max": 30,
+    "human_norm": 33.33,
+    "llm_score": 20
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 30.0,
+    "human_max": 30,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 15.0,
+    "human_max": 30,
+    "human_norm": 50.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 30.0,
+    "human_max": 30,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 21
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 30.0,
+    "human_max": 30,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 30.0,
+    "human_max": 30,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 22.0,
+    "human_max": 30,
+    "human_norm": 73.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 28.0,
+    "human_max": 30,
+    "human_norm": 93.33,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 35
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 30
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 21.0,
+    "human_max": 30,
+    "human_norm": 70.0,
+    "llm_score": 20
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 82
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 21.0,
+    "human_max": 30,
+    "human_norm": 70.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 60
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 30.0,
+    "human_max": 30,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 25
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 28.0,
+    "human_max": 30,
+    "human_norm": 93.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 30.0,
+    "human_max": 30,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 10
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 18.0,
+    "human_max": 20,
+    "human_norm": 90.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 8.0,
+    "human_max": 30,
+    "human_norm": 26.67,
+    "llm_score": 15
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 21.0,
+    "human_max": 30,
+    "human_norm": 70.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 40
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 21.0,
+    "human_max": 30,
+    "human_norm": 70.0,
+    "llm_score": 10
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 17.0,
+    "human_max": 20,
+    "human_norm": 85.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 25.0,
+    "human_max": 30,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 15.0,
+    "human_max": 20,
+    "human_norm": 75.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 23.0,
+    "human_max": 30,
+    "human_norm": 76.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 16.0,
+    "human_max": 20,
+    "human_norm": 80.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 10.0,
+    "human_max": 20,
+    "human_norm": 50.0,
+    "llm_score": 50
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 26.0,
+    "human_max": 30,
+    "human_norm": 86.67,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW3_Q1",
+    "hw": "HW3",
+    "human_raw": 14.0,
+    "human_max": 20,
+    "human_norm": 70.0,
+    "llm_score": 60
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW3_Q2",
+    "hw": "HW3",
+    "human_raw": 20.0,
+    "human_max": 20,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW3_Q3",
+    "hw": "HW3",
+    "human_raw": 24.0,
+    "human_max": 30,
+    "human_norm": 80.0,
+    "llm_score": 28
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 8.0,
+    "human_max": 12,
+    "human_norm": 66.67,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 7.0,
+    "human_max": 12,
+    "human_norm": 58.33,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 15
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 8.0,
+    "human_max": 12,
+    "human_norm": 66.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 40
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 30
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 6.0,
+    "human_max": 12,
+    "human_norm": 50.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 50
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 6.0,
+    "human_max": 12,
+    "human_norm": 50.0,
+    "llm_score": 60
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 6.0,
+    "human_max": 12,
+    "human_norm": 50.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 7.0,
+    "human_max": 12,
+    "human_norm": 58.33,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 72
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 30
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 8.0,
+    "human_max": 12,
+    "human_norm": 66.67,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 0
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 8.0,
+    "human_max": 12,
+    "human_norm": 66.67,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 6.0,
+    "human_max": 12,
+    "human_norm": 50.0,
+    "llm_score": 30
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S070",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 7.0,
+    "human_max": 12,
+    "human_norm": 58.33,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 7.0,
+    "human_max": 12,
+    "human_norm": 58.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 6.0,
+    "human_max": 12,
+    "human_norm": 50.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 55
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 8.0,
+    "human_max": 12,
+    "human_norm": 66.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 0.0,
+    "human_max": 12,
+    "human_norm": 0.0,
+    "llm_score": 35
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 60
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 10.0,
+    "human_max": 12,
+    "human_norm": 83.33,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 5.0,
+    "human_max": 12,
+    "human_norm": 41.67,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 9.0,
+    "human_max": 12,
+    "human_norm": 75.0,
+    "llm_score": 83
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW4_Q2",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW4_Q3",
+    "hw": "HW4",
+    "human_raw": 11.0,
+    "human_max": 12,
+    "human_norm": 91.67,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW4_Q4",
+    "hw": "HW4",
+    "human_raw": 12.0,
+    "human_max": 12,
+    "human_norm": 100.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW4_Q5",
+    "hw": "HW4",
+    "human_raw": 6.0,
+    "human_max": 12,
+    "human_norm": 50.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 15.0,
+    "human_max": 25,
+    "human_norm": 60.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S001",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 36.0,
+    "human_max": 50,
+    "human_norm": 72.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S002",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S048",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 50,
+    "human_norm": 50.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S049",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S050",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 21.0,
+    "human_max": 25,
+    "human_norm": 84.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 21.0,
+    "human_max": 25,
+    "human_norm": 84.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S051",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S052",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S053",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 30.0,
+    "human_max": 50,
+    "human_norm": 60.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S054",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 35.0,
+    "human_max": 50,
+    "human_norm": 70.0,
+    "llm_score": 15
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 21.0,
+    "human_max": 25,
+    "human_norm": 84.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 24.0,
+    "human_max": 25,
+    "human_norm": 96.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S055",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 45.0,
+    "human_max": 50,
+    "human_norm": 90.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S056",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 50.0,
+    "human_max": 50,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 21.0,
+    "human_max": 25,
+    "human_norm": 84.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S057",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 17.0,
+    "human_max": 25,
+    "human_norm": 68.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S058",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 21.0,
+    "human_max": 25,
+    "human_norm": 84.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S059",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 35.0,
+    "human_max": 50,
+    "human_norm": 70.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S060",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 50,
+    "human_norm": 50.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S061",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 46.0,
+    "human_max": 50,
+    "human_norm": 92.0,
+    "llm_score": 15
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S062",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S063",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 24.0,
+    "human_max": 25,
+    "human_norm": 96.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S064",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 48.0,
+    "human_max": 50,
+    "human_norm": 96.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 22.0,
+    "human_max": 25,
+    "human_norm": 88.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S065",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 45.0,
+    "human_max": 50,
+    "human_norm": 90.0,
+    "llm_score": 30
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 18.0,
+    "human_max": 25,
+    "human_norm": 72.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 17.0,
+    "human_max": 25,
+    "human_norm": 68.0,
+    "llm_score": 10
+  },
+  {
+    "student_id": "S066",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 48.0,
+    "human_max": 50,
+    "human_norm": 96.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S067",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 15.0,
+    "human_max": 50,
+    "human_norm": 30.0,
+    "llm_score": 40
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S068",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S069",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 80
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S071",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 48.0,
+    "human_max": 50,
+    "human_norm": 96.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S072",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 45
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 17.0,
+    "human_max": 25,
+    "human_norm": 68.0,
+    "llm_score": 70
+  },
+  {
+    "student_id": "S073",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 35.0,
+    "human_max": 50,
+    "human_norm": 70.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 75
+  },
+  {
+    "student_id": "S074",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 50,
+    "human_norm": 50.0,
+    "llm_score": 65
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 25.0,
+    "human_max": 25,
+    "human_norm": 100.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S075",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 43.0,
+    "human_max": 50,
+    "human_norm": 86.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 24.0,
+    "human_max": 25,
+    "human_norm": 96.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S077",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 85
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S078",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 35.0,
+    "human_max": 50,
+    "human_norm": 70.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S079",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 30.0,
+    "human_max": 50,
+    "human_norm": 60.0,
+    "llm_score": 100
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 92
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 88
+  },
+  {
+    "student_id": "S080",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 35.0,
+    "human_max": 50,
+    "human_norm": 70.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 17.0,
+    "human_max": 25,
+    "human_norm": 68.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 15.0,
+    "human_max": 25,
+    "human_norm": 60.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S081",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 30.0,
+    "human_max": 50,
+    "human_norm": 60.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S082",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 40.0,
+    "human_max": 50,
+    "human_norm": 80.0,
+    "llm_score": 78
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW5_Q1",
+    "hw": "HW5",
+    "human_raw": 20.0,
+    "human_max": 25,
+    "human_norm": 80.0,
+    "llm_score": 95
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW5_Q2",
+    "hw": "HW5",
+    "human_raw": 23.0,
+    "human_max": 25,
+    "human_norm": 92.0,
+    "llm_score": 90
+  },
+  {
+    "student_id": "S083",
+    "question_id": "HW5_Q3",
+    "hw": "HW5",
+    "human_raw": 41.0,
+    "human_max": 50,
+    "human_norm": 82.0,
+    "llm_score": 95
+  }
+]

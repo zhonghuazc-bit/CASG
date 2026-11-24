@@ -1,0 +1,82 @@
+{
+  "title": "B1 跨班实验 16 题口径结果(论文 5.4 表5数据来源)",
+  "note": "口径: 16道两班共有题(HW4_Q1排除)全覆盖子样本 n=33; 人工分用原始版 b1_human_scores.json(无惩罚校正); 损失配置 paper",
+  "alpha_star_b2": 0.6169,
+  "alpha_star_b1": 0.5773,
+  "delta_alpha_b2b1": 0.0396,
+  "n_complete_subset": 33,
+  "max_score_16q": 96.4708,
+  "human_metrics": {
+    "P": 0.1863,
+    "D": 0.1627,
+    "sigma": 6.3455,
+    "mean": 78.5
+  },
+  "transfer_metrics": {
+    "P": 0.2066,
+    "D": 0.1878,
+    "sigma": 7.7656,
+    "pearson_r": 0.4703,
+    "qwk_10": 0.4211,
+    "qwk_5": 0.1624,
+    "mae": 5.7155
+  },
+  "transfer_metrics_mean": 76.54,
+  "recal_metrics": {
+    "P": 0.2,
+    "D": 0.1854,
+    "sigma": 7.6782,
+    "pearson_r": 0.4747,
+    "qwk_10": 0.4615,
+    "qwk_5": 0.2524,
+    "mae": 5.6356
+  },
+  "recal_metrics_mean": 77.18,
+  "sampling_results": [
+    {
+      "sample_size": 5,
+      "alpha_mean": 0.587,
+      "alpha_std": 0.1797,
+      "delta_alpha_vs_b1": 0.0096,
+      "delta_alpha_vs_b2": 0.0299,
+      "P_mean": 0.1998,
+      "r_mean": 0.4745,
+      "qwk10_mean": 0.4067,
+      "mae_mean": 6.215
+    },
+    {
+      "sample_size": 10,
+      "alpha_mean": 0.6106,
+      "alpha_std": 0.1076,
+      "delta_alpha_vs_b1": 0.0333,
+      "delta_alpha_vs_b2": 0.0063,
+      "P_mean": 0.2049,
+      "r_mean": 0.4714,
+      "qwk10_mean": 0.4065,
+      "mae_mean": 5.929
+    },
+    {
+      "sample_size": 15,
+      "alpha_mean": 0.5756,
+      "alpha_std": 0.07,
+      "delta_alpha_vs_b1": 0.0017,
+      "delta_alpha_vs_b2": 0.0413,
+      "P_mean": 0.1994,
+      "r_mean": 0.475,
+      "qwk10_mean": 0.4235,
+      "mae_mean": 5.72
+    },
+    {
+      "sample_size": 20,
+      "alpha_mean": 0.5633,
+      "alpha_std": 0.0685,
+      "delta_alpha_vs_b1": 0.0141,
+      "delta_alpha_vs_b2": 0.0536,
+      "P_mean": 0.1974,
+      "r_mean": 0.4764,
+      "qwk10_mean": 0.4312,
+      "mae_mean": 5.714
+    }
+  ],
+  "economic_note": "采样20×16题=320次 vs 全样本33×16=528次, 节省39%"
+}

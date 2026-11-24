@@ -1,0 +1,39 @@
+{
+  "method": "second-diff on fine grid α∈[0.1,2.0] step=0.005",
+  "n_students": 38,
+  "student_score_convexity": {
+    "frac_second_diff_ge0": 1.0,
+    "min_second_diff": 0.6988867034607426,
+    "n_strict_nonconvex": 0,
+    "theoretical": "S_i(α)=const + Σ_{partial} m·c^α is strictly convex (sum of exponentials)"
+  },
+  "P": {
+    "second_diff_pos_ratio": 0.0,
+    "flips": 0,
+    "theoretical": "P(α)=1-mean(S)/100 is concave"
+  },
+  "D": {
+    "second_diff_pos_ratio": 0.06068601583113457,
+    "flips": 21,
+    "theoretical": "no guarantee (difference of order-statistic means)"
+  },
+  "sigma": {
+    "second_diff_pos_ratio": 0.31926121372031663,
+    "flips": 1,
+    "theoretical": "no guarantee (sqrt(E[S^2]-E[S]^2), convex-concave mix)"
+  },
+  "L_abs": {
+    "second_diff_pos_ratio": 0.6781002638522428,
+    "flips": 5,
+    "unimodal": "最小值在边界",
+    "min_alpha": 2.0000000000000018,
+    "min_value": 1.642992285155705
+  },
+  "L_paper": {
+    "second_diff_pos_ratio": 0.22427440633245382,
+    "flips": 19,
+    "unimodal": "单峰(唯一最小值)",
+    "min_alpha": 0.6200000000000004,
+    "min_value": 0.5075927294909873
+  }
+}
